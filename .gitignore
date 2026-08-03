@@ -1,0 +1,27 @@
+# Environment Variables (Menjaga path lokal/sensitif)
+.env
+.env.*
+!.env.example
+
+# Python Virtual Environment
+env_mcap/
+venv/
+.venv/
+env/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Cache Video Output MP4 (File hasil ekstraksi sementara)
+/tmp/
+mcap_videos/
+
+# System & Editor Files
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
