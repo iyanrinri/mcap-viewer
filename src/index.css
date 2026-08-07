@@ -1,0 +1,50 @@
+@import "tailwindcss";
+
+@theme {
+  --color-canvas: #ffffff;
+  --color-ink: #222222;
+  --color-body: #3f3f3f;
+  --color-primary: #ff385c;
+  --color-primary-active: #e00b41;
+  --color-surface-soft: #f7f7f7;
+  --color-surface-strong: #f2f2f2;
+  --color-hairline: #dddddd;
+  --color-hairline-soft: #ebebeb;
+  --color-muted: #6a6a6a;
+  
+  --font-sans: "Inter", "Circular", -apple-system, system-ui, sans-serif;
+  
+  --radius-md: 14px;
+  --radius-lg: 20px;
+  --radius-xl: 32px;
+  --radius-full: 9999px;
+
+  --shadow-airbnb: rgba(0,0,0,0.02) 0 0 0 1px, rgba(0,0,0,0.04) 0 2px 6px, rgba(0,0,0,0.1) 0 4px 8px;
+}
+
+@theme {
+  --color-canvas-dark: #0a0a0a;
+  --color-ink-dark: #ffffff;
+  --color-surface-soft-dark: #151515;
+  --color-surface-strong-dark: #222222;
+  --color-hairline-dark: #2a2a2a;
+  --color-hairline-soft-dark: #333333;
+  --color-muted-dark: #888888;
+}
+
+.dark {
+  --color-canvas: var(--color-canvas-dark);
+  --color-ink: var(--color-ink-dark);
+  --color-surface-soft: var(--color-surface-soft-dark);
+  --color-surface-strong: var(--color-surface-strong-dark);
+  --color-hairline: var(--color-hairline-dark);
+  --color-hairline-soft: var(--color-hairline-soft-dark);
+  --color-muted: var(--color-muted-dark);
+}
+
+@layer base {
+  body {
+    background-color: var(--color-canvas);
+    color: var(--color-ink);
+  }
+}

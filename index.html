@@ -1,63 +1,13 @@
-<!DOCTYPE html>
-<html lang="id">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>MCAP Video Player</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #121212;
-      color: #ffffff;
-      margin: 20px;
-    }
-    h1 { text-align: center; }
-    .video-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-      gap: 20px;
-      margin-top: 20px;
-    }
-    .video-card {
-      background: #1e1e1e;
-      border-radius: 8px;
-      padding: 12px;
-      box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-    }
-    video {
-      width: 100%;
-      border-radius: 4px;
-      background: #000;
-    }
-    h3 { margin-top: 0; color: #00adb5; }
-  </style>
-</head>
-<body>
-
-  <h1>🎥 MCAP Multi-Camera Viewer</h1>
-
-  <div class="video-grid">
-    <div class="video-card">
-      <h3>Primary Lens 0</h3>
-      <video controls preload="metadata" src="/video/lens_0"></video>
-    </div>
-
-    <div class="video-card">
-      <h3>Primary Lens 1</h3>
-      <video controls preload="metadata" src="/video/lens_1"></video>
-    </div>
-
-    <div class="video-card">
-      <h3>Left Hand Camera</h3>
-      <video controls preload="metadata" src="/video/left_hand"></video>
-    </div>
-
-    <div class="video-card">
-      <h3>Right Hand Camera</h3>
-      <video controls preload="metadata" src="/video/right_hand"></video>
-    </div>
-  </div>
-
-</body>
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>mcap-viewer</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
 </html>
-

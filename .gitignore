@@ -1,27 +1,24 @@
-# Environment Variables (Menjaga path lokal/sensitif)
-.env
-.env.*
-!.env.example
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# Python Virtual Environment
-env_mcap/
-venv/
-.venv/
-env/
+node_modules
+dist
+dist-ssr
+*.local
 
-# Python Bytecode & Cache
-__pycache__/
-*.py[cod]
-*$py.class
-.pytest_cache/
-
-# Cache Video Output MP4 (File hasil ekstraksi sementara)
-/tmp/
-mcap_videos/
-
-# System & Editor Files
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
+.idea
 .DS_Store
-Thumbs.db
-.vscode/
-.idea/
-
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
